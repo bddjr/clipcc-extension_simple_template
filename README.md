@@ -2,7 +2,7 @@
 
 别针扩展简单模板  
 
-> 该模板不是 ClipTeam 官方写的，作者与 ClipTeam 无关。  
+> 该作者与 ClipTeam 无关。  
 > 使用这个轻量级的方法，无需 nodejs 就能编写并打包扩展。  
 > 这种轻量级的打包方式不是标准的，但仍然可以被采纳，例如 <https://github.com/bddjr/clipcc-extension-restart_project> 。  
 > 仅用于单个 javascript 文件的场景。  
@@ -22,7 +22,7 @@ const {api, type, Extension} = self["ClipCCExtension"];
 ## 修改扩展ID与版本号
 假设我要将扩展的ID修改为 anonymous.example ，版本修改为 1.0.0 ，作者修改为 anonymous ，那么我需要修改以下文件：  
 
-这个文件会在扩展上传至编辑器时用于识别扩展信息，是最关键的一步。  
+这个文件会在扩展上传至编辑器时用于识别扩展信息，是很关键的一步。  
 ./code/info.json  
 ```json
 {
@@ -33,6 +33,15 @@ const {api, type, Extension} = self["ClipCCExtension"];
     "inset_icon": "assets/inset_icon.svg",
     "api": 1
 }
+```
+
+这个文件是 javascript 程序，也是很关键的一步。  
+./code/main.js  
+```javascript
+// 此处填写扩展ID
+const extension_id = 'anonymous.example';
+// 此处填写扩展的积木栏ID
+const category_id = extension_id + '.category';
 ```
 
 这个文件是用于英语的语言文件，当编辑器找不到对应语言的文件时，会在这个文件里查找。  
