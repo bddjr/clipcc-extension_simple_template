@@ -20,7 +20,12 @@ const {api, type, Extension} = self["ClipCCExtension"];
 
 ***
 ## 修改扩展ID与版本号
-假设我要将扩展的ID修改为 anonymous.example ，版本修改为 1.0.0 ，作者修改为 anonymous ，那么我需要修改以下文件：  
+假设我要  
+> 将扩展的ID修改为 anonymous.example  
+> 版本修改为 1.0.0  
+> 作者修改为 anonymous  
+ 
+那么我需要修改以下文件：  
 
 这个文件会在扩展上传至编辑器时用于识别扩展信息，是很关键的一步。  
 ./code/info.json  
@@ -51,7 +56,8 @@ const category_id = extension_id + '.category';
 "anonymous.example.name": "anonymous example extension",
 "anonymous.example.description": "Just a example extension.",
 
-"anonymous.example.category": "anonymous example extension"
+"anonymous.example.category": "anonymous example extension",
+"anonymous.example.category.string": "String [VALUE]"
 }
 ```
 
@@ -62,25 +68,27 @@ const category_id = extension_id + '.category';
 "anonymous.example.name": "匿名示范扩展",
 "anonymous.example.description": "只是一个示范扩展。",
 
-"anonymous.example.category": "匿名示范扩展"
+"anonymous.example.category": "匿名示范扩展",
+"anonymous.example.category.string": "字符串 [VALUE]"
 }
 ```
 
-这个文件是在Windows操作系统中用来打包为扩展的脚本。  
+这个文件是在 Windows 操作系统中用来打包为扩展的脚本。  
 packaging.bat
 ```
 bandizip a anonymous.example@1.0.0.ccx ./code
 ```
 
-这个文件是在Linux操作系统中用来打包为扩展的脚本。  
+这个文件是在 Linux 操作系统中用来打包为扩展的脚本。  
 packaging.sh
 ```
 zip -q -r anonymous.example@1.0.0.ccx ./code
 ```
 
 ***
-## 在Windows操作系统打包扩展
-请预先安装 [bandizip](https://www.bandisoft.com/bandizip/) ，再在这个文件夹下使用 powershell 运行如下命令：  
+## 在 Windows 操作系统打包扩展
+请预先安装 [bandizip](https://www.bandisoft.com/bandizip/) ，  
+再在这个文件夹下使用 powershell 运行如下命令：  
 ```
 ./packaging.bat
 ```
@@ -91,7 +99,7 @@ packaging.bat
 ```
 
 ***
-## 在Linux操作系统打包扩展
+## 在 Linux 操作系统打包扩展
 （待验证可行性）  
 请预先安装 zip 程序（多数Linux操作系统预装了该程序，但部分纯净镜像内可能不含），  
 再在这个文件夹下运行如下命令：  
@@ -101,5 +109,5 @@ packaging.bat
 
 ***
 ## 测试扩展
-在预览站上传自己的扩展（不会提交扩展审核），以测试自己的扩展：  
+在预览站上传自己的扩展（不提交扩展审核），以测试自己的扩展：  
 <https://codingclip.com/editor/stable/>  
