@@ -83,7 +83,7 @@ const category_id = extension_id + '.category';
 
 ***
 ## 在 Windows 操作系统打包扩展
-请预先安装 [bandizip](https://www.bandisoft.com/bandizip/) ，  
+请预先安装 [bandizip](https://cn.bandisoft.com/bandizip/) ，  
 再在这个文件夹下使用 powershell 运行如下命令：  
 ```
 ./packaging.ps1

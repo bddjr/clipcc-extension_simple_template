@@ -22,7 +22,7 @@ Because lightweight packaging is used, this method must be used when introducing
 const {api, type, Extension} = self["ClipCCExtension"];
 ```
 
-For the usage of the clipcc extension API, please refer to <https://doc.codingclip.com/zh-cn/category/for-developers> .  
+For the usage of the clipcc extension API, please refer to <https://doc.codingclip.com/category/for-developers> .  
 If you have any questions about using the extension API, please refer to other extensions yourself or consult the official personnel of Clipcc.  
 
 ***
