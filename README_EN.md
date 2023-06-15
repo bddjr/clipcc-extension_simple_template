@@ -10,8 +10,7 @@ Translate by <https://fanyi.baidu.com> , some content has been modified.
 ***
 
 ## Implementation principle
-
-Compress the code folder (originally named build) into a zip file (ccx is essentially a zip).  
+Compress the code folder into a zip file.  
 
 ***
 ## Writing extensions
