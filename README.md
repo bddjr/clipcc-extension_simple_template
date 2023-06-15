@@ -82,9 +82,14 @@ const category_id = extension_id + '.category';
 ./packaging.ps1
 ```
 
-如果你因为系统禁止运行此脚本而无法使用，请以管理员权限打开 powershell ，然后运行这个命令：
+如果你因为系统禁止运行此脚本而无法使用，请以管理员权限打开 powershell ，然后运行这个命令以允许执行ps1脚本：
 ```powershell
 set-ExecutionPolicy RemoteSigned
+```
+
+如果你已经安装了 python 与 bandizip ，那么也可以使用这个命令打包：
+```
+python packaging.py
 ```
 
 ***

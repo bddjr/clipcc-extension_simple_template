@@ -1,1 +1,1 @@
-python packaging.sh.py
+python packaging.py
