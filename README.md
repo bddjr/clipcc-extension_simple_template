@@ -1,6 +1,8 @@
 # clipcc extension simple template
 
-别针扩展简单模板  
+[If you want to read the English document, click here.](./README_EN.md)  
+
+别针扩展简单模板（轻量级）  
 
 > 该作者与 ClipTeam 无关。  
 > 使用这个轻量级的方法，无需 nodejs 就能编写并打包扩展。  
