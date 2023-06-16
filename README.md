@@ -102,10 +102,10 @@ python packaging.py
 ***
 ## 在 Linux 操作系统打包扩展
 （待验证可行性）  
-请预先安装 zip 和 python ，  
+请预先安装 zip 和 python3 ，  
 再在这个文件夹下运行如下命令：  
 ```
-./packaging.sh
+python3 packaging.py
 ```
 
 ***

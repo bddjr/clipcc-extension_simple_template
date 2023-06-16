@@ -93,10 +93,10 @@ python packaging.py
 
 (To be verified for feasibility)  
 
-Please pre install zip and Python,  
+Please pre install zip and Python3,  
 Then run the following command in this folder:  
 ```
-./packaging.sh
+python3 packaging.py
 ```
 
 ***
