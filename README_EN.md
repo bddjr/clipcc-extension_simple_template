@@ -30,7 +30,7 @@ If you have any questions about using the extension API, please refer to other e
 
 Assuming I want to
 
-> Change the ID of the extension to anonymous. example (if you want to submit for review, according to official standards, the extension ID should be verified through this regular expression `^([a-z_0-9]+)\.([a-z_0-9]+)$` )  
+> Change the ID of the extension to anonymous.example (if you want to submit for review, according to official standards, the extension ID should be verified through this regular expression `^([a-z_0-9]+)\.([a-z_0-9]+)$` )  
 > Revised version to 1.0.0  
 > Author modified to anonymous  
 
