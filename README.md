@@ -26,6 +26,38 @@ const {api, type, Extension} = self["ClipCCExtension"];
 若有扩展api使用的疑问，请自行参考其它扩展，或者到clipcc官方群聊询问。  
 
 ***
+## 在 Windows 操作系统打包扩展
+请预先安装 [bandizip](https://cn.bandisoft.com/bandizip/) ，  
+再在这个文件夹下使用 powershell 运行如下命令：  
+```
+./packaging.ps1
+```
+
+如果你因为系统禁止运行此脚本而无法使用，请以管理员权限打开 powershell ，然后运行这个命令以允许执行ps1脚本：
+```powershell
+set-ExecutionPolicy RemoteSigned
+```
+
+如果你已经安装了 python 与 bandizip ，那么也可以使用这个命令打包：
+```
+python packaging.py
+```
+
+***
+## 在 Linux 操作系统打包扩展
+（待验证可行性）  
+请预先安装 zip 和 python3 ，  
+再在这个文件夹下运行如下命令：  
+```
+python3 packaging.py
+```
+
+***
+## 测试扩展
+在预览站上传自己的扩展（不提交扩展审核），以测试自己的扩展：  
+<https://codingclip.com/editor/stable/>  
+
+***
 ## 修改扩展ID与版本号
 假设我要  
 > 将扩展的ID修改为 anonymous.example （如果你要提交审核，按照官方标准，扩展ID应当通过这个正则表达式验证 `^([a-z_0-9]+)\.([a-z_0-9]+)$` ）   
@@ -80,35 +112,3 @@ const category_id = extension_id + '.category';
 "anonymous.example.category.string": "字符串 [VALUE]"
 }
 ```
-
-***
-## 在 Windows 操作系统打包扩展
-请预先安装 [bandizip](https://cn.bandisoft.com/bandizip/) ，  
-再在这个文件夹下使用 powershell 运行如下命令：  
-```
-./packaging.ps1
-```
-
-如果你因为系统禁止运行此脚本而无法使用，请以管理员权限打开 powershell ，然后运行这个命令以允许执行ps1脚本：
-```powershell
-set-ExecutionPolicy RemoteSigned
-```
-
-如果你已经安装了 python 与 bandizip ，那么也可以使用这个命令打包：
-```
-python packaging.py
-```
-
-***
-## 在 Linux 操作系统打包扩展
-（待验证可行性）  
-请预先安装 zip 和 python3 ，  
-再在这个文件夹下运行如下命令：  
-```
-python3 packaging.py
-```
-
-***
-## 测试扩展
-在预览站上传自己的扩展（不提交扩展审核），以测试自己的扩展：  
-<https://codingclip.com/editor/stable/>  
